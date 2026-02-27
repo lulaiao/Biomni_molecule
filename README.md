@@ -1,3 +1,42 @@
+## 功能设计和划分：
+
+调用tools 获得稳定可靠的输出结果 （Biomni集成了工具无法有效利用）； 
+
+### 分子evaluation
+
+docking 工具 — AutoDock Vina  
+
+浩宁 https://autodock-vina.readthedocs.io/en/latest/docking_python.html 
+
+github：https://github.com/ccsb-scripps/AutoDock-Vina/tree/develop/example/python_scripting 
+
+逆向合成工具  —  SC score 
+
+江渝 github: https://github.com/connorcoley/scscore 
+
+admet 评估models（明确训练数据集和预测指标）
+
+先使用toxicity 使用ToxCast数据集，评估指标是 APR_HepG2_CellCycleArrest_24h  
+
+思远 github：https://github.com/miservilla/ChemBERTa 
+
+分子生成 models — RXNFlow 
+
+来奥 github：https://github.com/SeonghwanSeo/RxnFlow 
+
+### 分子类似物设计 models
+
+scaffold based model 
+
+LSTM 
+
+diffusion
+
+
+
+
+
+
 <p align="center">
   <img src="./figs/biomni_logo.png" alt="Biomni Logo" width="600px" />
 </p>
