@@ -1,0 +1,10 @@
+{
+  "run_type": "scaffold_decorating",
+  "model_path": "Lib-INVENT/trained_models/reaction_based.model",
+  "input_scaffold_path": "Lib-INVENT/examples/scaffolds.smi",
+  "output_path": "Lib-INVENT/examples/decorate_output.csv",
+  "logging_path": "Lib-INVENT/examples/decorate_log",
+  "batch_size": 1,
+  "number_of_decorations_per_scaffold": 32,
+  "randomize": true
+}

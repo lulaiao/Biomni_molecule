@@ -1,0 +1,12 @@
+{
+  "run_type": "scaffold_decorating",
+  "parameters": {
+    "model_path": "trained_models/reaction_based.model",
+    "input_scaffold_path": "examples/scaffolds.smi",
+    "output_path": "examples/decorate_output.csv",
+    "logging_path": "examples/decorate_log",
+    "batch_size": 1,
+    "number_of_decorations_per_scaffold": 32,
+    "randomize": true
+  }
+}

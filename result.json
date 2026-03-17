@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "message": "Lib-INVENT run completed successfully.",
+  "params_file": "params.json",
+  "run_type": "scaffold_decorating",
+  "parameters": {
+    "model_path": "Lib-INVENT/trained_models/reaction_based.model",
+    "input_scaffold_path": "Lib-INVENT/examples/scaffolds.smi",
+    "output_path": "Lib-INVENT/examples/decorate_output.csv",
+    "logging_path": "Lib-INVENT/examples/decorate_log",
+    "batch_size": 1,
+    "number_of_decorations_per_scaffold": 32,
+    "randomize": true
+  },
+  "outputs": {
+    "output_path": "Lib-INVENT/examples/decorate_output.csv",
+    "logging_path": "Lib-INVENT/examples/decorate_log"
+  },
+  "summary": {
+    "output_exists": true,
+    "row_count": 88,
+    "columns": [
+      "SMILES",
+      "Scaffold",
+      "Decorations",
+      "Likelihoods"
+    ],
+    "preview": [
+      {
+        "SMILES": "C(F)(F)c1nn(-c2ccc(S(N)(=O)=O)cc2)c(-c2ccc(C)cc2)c1",
+        "Scaffold": "c1c(S(N)(=O)=O)ccc(-n2nc([*])cc2-c2ccc(C)cc2)c1",
+        "Decorations": "C(F)(F)*",
+        "Likelihoods": "3.035288095474243"
+      },
+      {
+        "SMILES": "c1(Nc2ccccc2)nc(Nc2ccccc2)c(C(=O)N)nc1",
+        "Scaffold": "c1ccccc1[*]",
+        "Decorations": "c1(N*)nc(Nc2ccccc2)c(C(=O)N)nc1",
+        "Likelihoods": "18.74163818359375"
+      },
+      {
+        "SMILES": "C1C(COc2cccc(-c3cnccc3)n2)=CN(C(=O)C)C(=O)C(C(F)(F)F)=C1",
+        "Scaffold": "[*]c1cnccc1",
+        "Decorations": "C1C(COc2cccc(*)n2)=CN(C(=O)C)C(=O)C(C(F)(F)F)=C1",
+        "Likelihoods": "37.89387512207031"
+      },
+      {
+        "SMILES": "FC(F)c1cc(-c2ccc(C)cc2)n(-c2ccc(S(=O)(N)=O)cc2)n1",
+        "Scaffold": "c1(-c2ccc(C)cc2)cc([*])nn1-c1ccc(S(=O)(N)=O)cc1",
+        "Decorations": "FC(*)F",
+        "Likelihoods": "2.0155582427978516"
+      },
+      {
+        "SMILES": "c1c(C(CCN2C(=O)C(C3(C(=O)c4ccc(OC)cc4)CCC3)CCC2)c2ccccc2)cc(C(NCCC(C)C)=O)cc1C(=O)C",
+        "Scaffold": "c1cccc([*])c1",
+        "Decorations": "c1c(C(*)CCN2C(=O)C(C3(C(=O)c4ccc(OC)cc4)CCC3)CCC2)cc(C(NCCC(C)C)=O)cc1C(=O)C",
+        "Likelihoods": "49.22813415527344"
+      }
+    ]
+  }
+}
